@@ -1,0 +1,34 @@
+{
+  "name": "mozui",
+  "author": ",modelmund",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./dist/mozui.umd.cjs",
+  "module": "./dist/mozui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/mozui.js",
+      "require": "./dist/mozui.umd.cjs"
+    }
+  },
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "mozui": "^0.0.1",
+    "sass": "^1.54.0",
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.0",
+    "vue-tsc": "^0.38.4"
+  }
+}
