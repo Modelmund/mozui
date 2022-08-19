@@ -8,7 +8,7 @@
 
 <script lang="ts">
 export default {
-  name: "mButton",
+  name: "MButton",
 };
 </script>
 <script setup lang="ts">
@@ -22,8 +22,8 @@ const props = defineProps({
 });
 
 const mClass = computed(() => {
-  return ['m-button', `m-button-${props.type}`];
-})
+  return ["m-button", `m-button-${props.type}`];
+});
 </script>
 
 <style lang="scss" scoped>
@@ -32,9 +32,10 @@ button {
   border: none;
   background: none;
   cursor: pointer;
-  &:hover,&:focus {
-      opacity: .8;
-    }
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
 }
 
 .m-button {

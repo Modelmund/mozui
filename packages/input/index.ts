@@ -1,8 +1,8 @@
 import { App } from 'vue'
-import mInput from './index.vue'
+import MInput from './index.vue'
 
-mInput.install = (app: App) => {
-  app.component(mInput.name, mInput)
+MInput.install = (app: App) => {
+  app.component(MInput.name, MInput)
 }
 
-export default mInput;
+export default MInput;
